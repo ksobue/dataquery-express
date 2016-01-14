@@ -3,13 +3,12 @@
   "version": "0.0.1",
   "description": "DataQuery for Express server",
   "main": "index.js",
+  "peerDependencies": {
+    "dataquery": "ksobue/dataquery",
+    "xmldom": "^0.1.21"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Koichiro Sobue <koichiro.sobue@gmail.com> (https://github.com/ksobue/)",
-  "license": "MIT",
-  "devDependencies": {
-    "dataquery": "ksobue/dataquery",
-    "xmldom": "^0.1.21"
-  }
+  "license": "MIT"
 }
