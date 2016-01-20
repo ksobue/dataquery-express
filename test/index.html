@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dataquery-express test</title>
+        <script src="bundled.js"></script>
+    </head>
+    <body>
+        <textarea id="query" style="width: 200px; height: 200px;">
+<?xml version="1.0"?>
+<dataquery-request>
+  <selector table="sales">
+    <rows>
+      <row sortOrder="ascending">
+        <select>
+          <column-ref>Region</column-ref>
+        </select>
+      </row>
+    </rows>
+    <columns>
+      <column sortOrder="ascending">
+        <select>
+          <column-ref>Ship_Mode</column-ref>
+        </select>
+      </column>
+    </columns>
+    <data>
+      <datum>
+        <select>
+          <function name="COUNT">
+            <column-ref>Profit</column-ref>
+          </function>
+        </select>
+      </datum>
+    </data>
+  </selector>
+</dataquery-request>
+        </textarea><br/>
+        <button id="submit">Submit Query</button>
+    </body>
+</html>

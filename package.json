@@ -1,16 +1,19 @@
 {
-  "name": "dataquery-express",
-  "version": "0.0.1",
-  "description": "DataQuery for Express server",
-  "main": "index.js",
-  "dependencies": {
-    "xmldom": "^0.1.21"
-  },
-  "peerDependencies": {
-    "dataquery": "0.0.1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "license": "MIT"
+    "name": "dataquery-express",
+    "version": "0.0.1",
+    "description": "DataQuery for Express server",
+    "main": "index.js",
+    "dependencies": {
+        "xmldom": "^0.1.21"
+    },
+    "devDependencies": {
+        "express": "^4.13.3",
+        "dataquery": "ksobue/dataquery",
+        "dataquery-r": "ksobue/dataquery-r"
+    },
+    "scripts": {
+        "test": "node test.js",
+        "pretest": "browserify test/test.js --outfile test/bundled.js"
+    },
+    "license": "MIT"
 }
